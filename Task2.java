@@ -9,21 +9,21 @@ public class Task2 {
     public static void main(String[] args) {
 
         Queue<String> list = new LinkedList<>();
-        System.out.println(list);
+        
         enqueue(list);
         enqueue(list);
         enqueue(list);
         enqueue(list);
         System.out.println(list);
         dequeue(list);
-        System.out.println(list);
         first(list);
     }
 
     static void dequeue(Queue<String> list){      
         System.out.println("Первый элемент в очереди " + list.peek());
         list.poll();
-        System.out.println("Элемент удален ");   
+        System.out.println("Элемент удален ");
+        System.out.println(list);   
     }
 
     static void enqueue(Queue<String> list){
